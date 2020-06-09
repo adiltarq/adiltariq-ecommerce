@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+  }
+  .go-back{
+    color: white !important;
+  }
+                                    /*----------------Navbar Color  --------------*/
+  .navbar{
+    background-color: black !important;
+  }
+                                    /*----------------product heading  --------------*/
+  .product-heading{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: aliceblue;
+    text-shadow: black 0px 0px 10px;
+    text-align: center;
+  }
+  
+                                    /*----------------product code --------------*/
+.product-code{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    /* text-decoration: underline overline; */
+    font-weight: bold;
+}
+                                    /*----------------product carousel --------------*/
+.carousel{
+  height: 450px;
+}
+.carousel-control-prev-icon , .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.356);
+  border-radius: 50%;
+}
+  .carousel-zoom {
+    background-color: white;
+    transition: transform .2s;
+    width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .carousel-img-size{
+    width: 350px !important ;
+    /* height: 500px; */
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  } 
+
+ /* =========for mobile screen ========= */
+
+  @media screen and (max-width:700px){
+  .carousel-zoom:hover {
+    width: 98%;
+     overflow: auto;
+     
+  }
+}
+  
+  
+
+                                        /*---------------- product small picture----------------  */
+  
+  .small-img-zoom-div{
+    width: 360px;
+    display: flex;
+    flex-direction: row;
+  }
+  .product-small-img{
+    width: 100px;
+}
+@media screen and (max-width:700px){
+  .small-img-zoom {
+    transition: transform .5s;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    display: inline;
+    margin: 0 auto;
+    justify-content: center;
+    margin: 1px;
+    position: relative;
+    left: 27%;
+    opacity: .5;
+  }
+}
+/*========= for large screen ========= */
+
+@media screen and (min-width:700px){
+    .small-img-zoom {
+      padding: 1px;
+      transition: transform .3s;
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+      display: inline;
+      margin: 0 auto;
+      justify-content: center;
+      position: relative;
+      left: 110%;
+      opacity: .5;
+    }
+  }
+
+ /*========= after hover=========  */
+
+  @media screen and (max-width:700px){
+  
+  .small-img-zoom:hover {
+    -ms-transform: scale(5.5); 
+    -webkit-transform: scale(5.5); 
+    transform: scale(5.3); 
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    overflow: auto;
+    border: 1px solid rgb(83, 81, 81);
+    z-index: 2;
+    opacity: 1;
+
+}
+}
+
+ /* =========for large screen ========= */
+
+
+@media screen and (min-width:700px){
+  
+    .small-img-zoom:hover {
+      -ms-transform: scale(5.5); 
+      -webkit-transform: scale(5.5); 
+      transform: scale(5.5); 
+      /* margin-left: 10px; */
+      /* margin-right: 10px; */
+      overflow: auto;
+      z-index: 2;
+      opacity: 1;
+  
+  }
+  }
+                                        /*---------------- product price----------------  */
+
+.old-price{
+    color: gray;
+    text-align: center;
+    text-decoration: line-through;
+}
+.new-price{
+    color: rgb(151, 39, 39);
+    text-align: center;
+}
+                                        /*---------------- buy button----------------  */
+
+.buy-button{
+  position: sticky;
+  bottom: 0px;
+  padding: 5px;
+  font-size: 18px;
+  /* top: 75%; */
+}
+
+                                        /*---------------- buy modal color----------------  */
+.modal-content{
+  border-radius: 10px !important;
+}
+
+                                                        /* copy btn work  */
+  @media screen and (max-width:600px){
+
+  .copied{
+    display: none;
+  }
+  .copy-btn:hover .copied{
+    color: black !important;
+    font-weight: bold;
+    display: block !important;
+  }
+  .copy-btn:hover .copy{
+    display: none;
+  }
+  }
+                          
+                    @media screen and (min-width:600px){
+  .copied{
+    display: none;
+  }
+  .copy-btn:active .copied{
+    color: black !important;
+    font-weight: bold;
+    display: block !important;
+  }
+  .copy-btn:active .copy{
+    display: none;
+  }
+  }
+
+  .modal-footer{
+    display: inline-flex;
+    text-align: center !important;
+    justify-content: center;
+    padding: 5px;
+  }
+  .modal-footer a {
+    color: white;
+    display: inline !important;
+  }
+                                        /*---------------- product info table----------------  */
+ .table{
+     width: 90%;
+ }
+ table{
+     margin: 0 auto;
+ }
